@@ -1,0 +1,25 @@
+#app server configuration:
+server:
+  port: 8000
+  compression:
+    enabled: true
+  error:
+    include-stacktrace: never
+  netty:
+    connection-timeout: 5000
+    idle-timeout: 6000
+
+# app spring configuration
+spring:
+  application:
+    name: archetype-api-microservices
+  webflux:
+    base-path: /archetype-api-microservices/v1
+  banner:
+    location: 'classpath:/banner.txt'
+# app logging configuration
+
+logging:
+  level:
+    com.bacsystem.microservices: debug
+    root: info

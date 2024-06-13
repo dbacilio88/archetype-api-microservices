@@ -1,0 +1,52 @@
+<archetype-descriptor
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        name="quickstart">
+    <fileSets>
+
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src</directory>
+        </fileSet>
+
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory/>
+            <includes>
+                <!--Documents archives-->
+                <include>config/**</include>
+                <include>docs/**</include>
+                <include>deploy/**</include>
+                <!--app build archives-->
+                <include>.mvn/**</include>
+                <include>mvnw</include>
+                <include>mvnw.cmd</include>
+                <include>.gradle/**</include>
+                <include>gradlew</include>
+                <include>gradlew.bat</include>
+                <include>*.properties</include>
+                <include>*.config</include>
+                <!--app ignore archives-->
+                <include>.gitignore</include>
+            </includes>
+            <excludes>
+                <exclude>**/application.yml</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory/>
+            <includes>
+                <!--Documents archives-->
+                <include>*.md</include>
+                <!--app build archives-->
+                <include>Dockerfile</include>
+                <include>Jenkinsfile</include>
+                <include>settings.gradle</include>
+                <include>build.gradle</include>
+                <!--app properties archives-->
+                <exclude>**/application.yml</exclude>
+            </includes>
+        </fileSet>
+
+    </fileSets>
+</archetype-descriptor>
