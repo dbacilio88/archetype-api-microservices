@@ -1,0 +1,61 @@
+# app server configuration:
+server:
+  port: 8000
+  compression:
+    enabled: true
+  tomcat:
+    uri-encoding: UTF-8
+  error:
+    include-stacktrace: never
+  netty:
+    idle-timeout: 5000
+    connection-timeout: 6000
+
+# app spring configuration:
+spring:
+  application:
+    name: ${artifactId}
+  webflux:
+    base-path: /${artifactId}/v1
+  banner:
+    location: 'classpath:/banner.txt'
+  main:
+    banner-mode: log
+    lazy-initialization: false
+  mvc:
+    converters:
+      preferred-json-mapper: jsonb
+  devtools:
+    restart:
+      enabled: true
+    add-properties: false
+# app logging configuration:
+logging:
+  level:
+    com.bacsystem: debug
+    root: info
+    web: info
+    sql: debug
+
+# app swagger configuration
+springdoc:
+  api-docs:
+    enabled: true
+# app health configuration:
+management:
+  info:
+    git:
+      enabled: true
+      mode: full
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  health:
+    db:
+      enabled: true
+    liveness-state:
+      enabled: true
+    readiness-state:
+      enabled: true
+

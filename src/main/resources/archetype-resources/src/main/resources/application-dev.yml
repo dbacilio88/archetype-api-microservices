@@ -1,0 +1,32 @@
+# app database configuration:
+spring:
+  jpa:
+    open-in-view: false
+    show-sql: false
+    #database: postgresql # Postgres SQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting, and it will be selected by default)
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        #dialect: org.hibernate.dialect.PostgreSQLDialect # Postgres SQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting, and it will be selected by default)
+        show_sql: true
+        format_sql: true
+
+  datasource:
+    hikari:
+      connection-init-sql: SELECT 1
+      connection-test-query: SELECT 1
+      allow-pool-suspension: false
+      auto-commit: true                   # This property controls the default auto-commit behavior of connections returned from the pool. It is a boolean value, default: true
+      connection-timeout: 3000            # The maximum length of time (milliseconds) to wait for the connection pool to allocate a connection, and a SQLException will occur if the connection is not available for more than this length. The default:30second
+      idle-timeout: 600000                # The maximum duration of connection timeout (milliseconds), timeout will be released (retired), default: 10Minutes
+      leak-detection-threshold: 45000     # This property controls the amount of time that a connection can be out of the pool before a message is logged indicating a possible connection leak. A value of 0 means leak detection is disabled, minimum accepted value is 2000 (ms). ( ps: it's rarely needed option, use only for debugging ), default: 0
+      max-lifetime: 1800000               # This property controls the maximum lifetime of a connection in the pool. A value of 0 indicates no maximum lifetime (infinite lifetime), default: 1800000
+      minimum-idle: 10                    # This property controls the minimum number of idle connections that HikariCP tries to maintain in the pool, default: 10
+      maximum-pool-size: 20               # This property controls the maximum size that the pool is allowed to reach, including both idle and in-use connections. Basically this value will determine the maximum number of actual connections to the database backend, default: 10
+      validation-timeout: 5000            # This property controls the maximum amount of time that a connection will be tested for aliveness. This value must be less than the :connection-timeout. The lowest accepted validation timeout is 1000ms (1 second)
+
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=public
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver

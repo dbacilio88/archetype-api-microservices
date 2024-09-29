@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "debd3727-99ee-4725-8134-8dcdcf577885",
+		"name": "github",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18542737"
+	},
+	"item": [
+		{
+			"name": "archetype-maven",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-microservice-host}}/all",
+							"host": [
+								"{{api-microservice-host}}"
+							],
+							"path": [
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-microservice-host}}/pages?page=1&size=1",
+							"host": [
+								"{{api-microservice-host}}"
+							],
+							"path": [
+								"pages"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-microservice-host}}/2",
+							"host": [
+								"{{api-microservice-host}}"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 50,\r\n        \"uuId\": \"6303c3a0-5351-4c5c-9e1b-90fac7cccb9d\",\r\n        \"description\": \"description 5\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-microservice-host}}",
+							"host": [
+								"{{api-microservice-host}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api-microservice-host}}/123",
+							"host": [
+								"{{api-microservice-host}}"
+							],
+							"path": [
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"description 10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-microservice-host}}",
+							"host": [
+								"{{api-microservice-host}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "**collection postman have crud:**\n\n- POST\n    \n- GET\n    \n- DETETE\n    \n- PUT"
+		}
+	]
+}

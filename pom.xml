@@ -6,6 +6,7 @@
     <groupId>com.bacsystem</groupId>
     <artifactId>archetype-api-microservices</artifactId>
     <version>1.0.0</version>
+    <description>archetype component spring-boot</description>
 
     <developers>
         <developer>
@@ -24,6 +25,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
+
 
     <build>
         <extensions>

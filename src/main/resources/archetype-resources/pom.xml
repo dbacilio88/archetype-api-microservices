@@ -6,5 +6,5 @@
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>${version}</version>
-    <description>microservices components reactives</description>
+    <description>${description}</description>
 </project>
