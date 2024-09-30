@@ -50,7 +50,6 @@ mvn archetype:generate ^
 -DgroupId=com.example ^
 -DartifactId=archetype-example ^
 -Dversion=1.0.0 ^
--Dversion=1.0.0 ^
 -DpackageName=microservice/application ^
 -Dpackage=com.example ^
 -DinteractiveMode=false
