@@ -1,24 +1,22 @@
 # 🎯 archetype-api-microservices
 
 <!-- TOC -->
-
 * [🎯 archetype-api-microservices](#-archetype-api-microservices)
 * [🧩 Descripción general](#-descripción-general)
 * [🔖 Características](#-características)
-    * [📋 Requisitos](#-requisitos)
+  * [📋 Requisitos](#-requisitos)
 * [🪛 Crear un proyecto](#-crear-un-proyecto)
-    * [📀 Instalación](#-instalación)
-    * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
-    * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
-    * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
-    * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
-    * [⚙️ Configuración rápida](#-configuración-rápida)
-    * [🧰 Integración de dependencias](#-integración-de-dependencias)
-    * [📦 Ejemplo de código](#-ejemplo-de-código)
+  * [📀 Instalación](#-instalación)
+  * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
+  * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
+  * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
+  * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
+  * [⚙️ Configuración rápida](#-configuración-rápida)
+  * [🧰 Integración de dependencias](#-integración-de-dependencias)
+  * [📦 Ejemplo de código](#-ejemplo-de-código)
 * [🧪 Uso](#-uso)
 * [👨🏻‍💻 Contribuciones](#-contribuciones)
 * [📞 Contacto](#-contacto)
-
 <!-- TOC -->
 
 # 🧩 Descripción general
@@ -89,10 +87,12 @@ mvn archetype:generate ^
 ## 🧮 Estructura del proyecto
 
 ```
-Disk:.
+Disk:
 ├───deploy
 ├───docs
 │   └───collections
+├───gradle
+│   └───wrapper
 └───src
     ├───main
     │   ├───java
@@ -102,7 +102,9 @@ Disk:.
     │   │               └───application
     │   │                   ├───components
     │   │                   │   ├───configuration
+    │   │                   │   ├───enums
     │   │                   │   ├───exceptions
+    │   │                   │   │   └───handler
     │   │                   │   ├───interfaces
     │   │                   │   ├───mappers
     │   │                   │   └───utils
