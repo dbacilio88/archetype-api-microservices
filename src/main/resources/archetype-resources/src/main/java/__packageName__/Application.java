@@ -5,17 +5,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Application
+ * <b>SpringBootApplication</b>
  * <p>
- * Application class.
+ * This class specifies the requirements for the {@link SpringBootApplication} component,
+ * developed in accordance with the development standards established by bxcode.
+ * Collaboration is encouraged for the enhancement and expansion of the archetype-example.
+ * </p>
  * <p>
- * THIS COMPONENT WAS BUILT ACCORDING TO THE DEVELOPMENT STANDARDS
- * AND THE BACSYSTEM APPLICATION DEVELOPMENT PROCEDURE AND IS PROTECTED
- * BY THE LAWS OF INTELLECTUAL PROPERTY AND COPYRIGHT...
+ * <b>Usage:</b>
+ * description here!
+ * </p>
  *
- * @author Bacsystem
- * @author bacsystem.sac@gmail.com
- * @since 13/06/2024
+ * @author bxcode
+ * @author dbacilio88@outllok.es
+ * @since 28/10/2024
  */
 @Log4j2
 @SpringBootApplication

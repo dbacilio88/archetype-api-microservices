@@ -8,17 +8,20 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 /**
- * IApplicationController
+ * <b>IApplicationController</b>
  * <p>
- * IApplicationController interface.
+ * This class specifies the requirements for the {@link IApplicationController} component,
+ * developed in accordance with the development standards established by bxcode.
+ * Collaboration is encouraged for the enhancement and expansion of the archetype-example.
+ * </p>
  * <p>
- * THIS COMPONENT WAS BUILT ACCORDING TO THE DEVELOPMENT STANDARDS
- * AND THE BACSYSTEM APPLICATION DEVELOPMENT PROCEDURE AND IS PROTECTED
- * BY THE LAWS OF INTELLECTUAL PROPERTY AND COPYRIGHT...
+ * <b>Usage:</b>
+ * description here!
+ * </p>
  *
- * @author cbaciliod
+ * @author bxcode
  * @author dbacilio88@outllok.es
- * @since 25/09/2024
+ * @since 28/10/2024
  */
 
 public interface IApplicationController {
