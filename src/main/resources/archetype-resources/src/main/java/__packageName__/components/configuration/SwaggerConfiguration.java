@@ -6,17 +6,20 @@ import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.beans.factory.annotation.Configurable;
 
 /**
- * SwaggerConfiguration
+ * <b>SwaggerConfiguration</b>
  * <p>
- * SwaggerConfiguration class.
+ * This class specifies the requirements for the {@link SwaggerConfiguration} component,
+ * developed in accordance with the development standards established by bxcode.
+ * Collaboration is encouraged for the enhancement and expansion of the archetype-example.
+ * </p>
  * <p>
- * THIS COMPONENT WAS BUILT ACCORDING TO THE DEVELOPMENT STANDARDS
- * AND THE BACSYSTEM APPLICATION DEVELOPMENT PROCEDURE AND IS PROTECTED
- * BY THE LAWS OF INTELLECTUAL PROPERTY AND COPYRIGHT...
+ * <b>Usage:</b>
+ * description here!
+ * </p>
  *
- * @author cbaciliod
+ * @author bxcode
  * @author dbacilio88@outllok.es
- * @since 25/09/2024
+ * @since 28/10/2024
  */
 
 @Configurable

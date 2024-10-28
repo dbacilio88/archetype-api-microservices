@@ -10,13 +10,13 @@ server:
   netty:
     idle-timeout: 5000
     connection-timeout: 6000
+  servlet:
+    context-path: /archetype-example/v1
 
 # app spring configuration:
 spring:
   application:
-    name: ${artifactId}
-  webflux:
-    base-path: /${artifactId}/v1
+    name: archetype-example
   banner:
     location: 'classpath:/banner.txt'
   main:

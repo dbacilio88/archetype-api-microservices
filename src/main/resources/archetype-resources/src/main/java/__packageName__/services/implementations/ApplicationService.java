@@ -1,11 +1,14 @@
 package ${package}.${packageName.replace('/','.')}.services.implementations;
 
-
+import ${package}.${packageName.replace('/','.')}.components.enums.ResponseCode;
+import ${package}.${packageName.replace('/','.')}.components.exceptions.CommonException;
 import ${package}.${packageName.replace('/','.')}.components.mappers.IApplicationMapper;
 import ${package}.${packageName.replace('/','.')}.dtos.ApplicationDto;
 import ${package}.${packageName.replace('/','.')}.repositories.IBsApplicationRepository;
 import ${package}.${packageName.replace('/','.')}.repositories.entities.BsApplicationEntity;
 import ${package}.${packageName.replace('/','.')}.services.contracts.IApplicationService;
+
+
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -17,17 +20,20 @@ import java.util.Optional;
 import java.util.UUID;
 
 /**
- * ApplicationService
+ * <b>ApplicationService</b>
  * <p>
- * ApplicationService class.
+ * This class specifies the requirements for the {@link ApplicationService} component,
+ * developed in accordance with the development standards established by bxcode.
+ * Collaboration is encouraged for the enhancement and expansion of the archetype-example.
+ * </p>
  * <p>
- * THIS COMPONENT WAS BUILT ACCORDING TO THE DEVELOPMENT STANDARDS
- * AND THE BACSYSTEM APPLICATION DEVELOPMENT PROCEDURE AND IS PROTECTED
- * BY THE LAWS OF INTELLECTUAL PROPERTY AND COPYRIGHT...
+ * <b>Usage:</b>
+ * description here!
+ * </p>
  *
- * @author cbaciliod
+ * @author bxcode
  * @author dbacilio88@outllok.es
- * @since 25/09/2024
+ * @since 28/10/2024
  */
 
 @Service
@@ -41,9 +47,7 @@ public class ApplicationService implements IApplicationService {
     public long delete(Long id) {
         Optional<BsApplicationEntity> result = this.applicationRepository.findById(id);
         if (result.isEmpty()) {
-            //throw new RuntimeException("not found");
-            // TODO lógica para controlar error pendiente.
-            return 0;
+            throw new CommonException("not found entity by id ".concat(String.valueOf(id)), ResponseCode.NOT_FOUND);
         }
 
         this.applicationRepository.delete(result.get());
@@ -64,7 +68,14 @@ public class ApplicationService implements IApplicationService {
 
     @Override
     public ApplicationDto findById(Long id) {
-        return this.applicationMapper.toDto(this.applicationRepository.findById(id).orElse(null));
+
+        Optional<BsApplicationEntity> result = this.applicationRepository.findById(id);
+
+        if (result.isEmpty()) {
+            throw new CommonException("not found entity by id ".concat(String.valueOf(id)), ResponseCode.NOT_FOUND);
+        }
+
+        return this.applicationMapper.toDto(result.get());
     }
 
     @Override
@@ -78,9 +89,7 @@ public class ApplicationService implements IApplicationService {
     public ApplicationDto update(ApplicationDto applicationDto) {
         Optional<BsApplicationEntity> result = this.applicationRepository.findById(applicationDto.getId());
         if (result.isEmpty()) {
-            //throw new RuntimeException("not found");
-            // TODO lógica para controlar error pendiente.
-            return applicationDto;
+            throw new CommonException("not found entity by id ".concat(String.valueOf(applicationDto.getId())), ResponseCode.NOT_FOUND);
         }
         BsApplicationEntity entity = result.get();
         entity.setApDescription(applicationDto.getDescription());
