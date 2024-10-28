@@ -13,23 +13,27 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * ApplicationController
+ * <b>ApplicationController</b>
  * <p>
- * ApplicationController class.
+ * This class specifies the requirements for the {@link ApplicationController} component,
+ * developed in accordance with the development standards established by bxcode.
+ * Collaboration is encouraged for the enhancement and expansion of the archetype-example.
+ * </p>
  * <p>
- * THIS COMPONENT WAS BUILT ACCORDING TO THE DEVELOPMENT STANDARDS
- * AND THE BACSYSTEM APPLICATION DEVELOPMENT PROCEDURE AND IS PROTECTED
- * BY THE LAWS OF INTELLECTUAL PROPERTY AND COPYRIGHT...
+ * <b>Usage:</b>
+ * description here!
+ * </p>
  *
- * @author cbaciliod
+ * @author bxcode
  * @author dbacilio88@outllok.es
- * @since 25/09/2024
+ * @since 28/10/2024
  */
 
 @Log4j2
 @RestController
 @RequestMapping
 public class ApplicationController implements IApplicationController {
+
 
     private final IApplicationService applicationService;
 
@@ -50,13 +54,13 @@ public class ApplicationController implements IApplicationController {
     }
 
     @Override
-    @PostMapping
+    @PostMapping("/save")
     public ResponseEntity<ApplicationDto> saveExecute(@RequestBody ApplicationDto application) {
         return new ResponseEntity<>(this.applicationService.save(application), HttpStatus.CREATED);
     }
 
     @Override
-    @PutMapping
+    @PutMapping("/update")
     public ResponseEntity<ApplicationDto> updateExecute(@RequestBody ApplicationDto application) {
         return new ResponseEntity<>(this.applicationService.update(application), HttpStatus.OK);
     }

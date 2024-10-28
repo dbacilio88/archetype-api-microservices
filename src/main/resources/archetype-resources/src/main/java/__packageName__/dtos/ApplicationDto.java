@@ -7,17 +7,20 @@ import java.io.Serial;
 import java.io.Serializable;
 
 /**
- * ApplicationDto
+ * <b>ApplicationDto</b>
  * <p>
- * ApplicationDto class.
+ * This class specifies the requirements for the {@link ApplicationDto} component,
+ * developed in accordance with the development standards established by bxcode.
+ * Collaboration is encouraged for the enhancement and expansion of the archetype-example.
+ * </p>
  * <p>
- * THIS COMPONENT WAS BUILT ACCORDING TO THE DEVELOPMENT STANDARDS
- * AND THE BACSYSTEM APPLICATION DEVELOPMENT PROCEDURE AND IS PROTECTED
- * BY THE LAWS OF INTELLECTUAL PROPERTY AND COPYRIGHT...
+ * <b>Usage:</b>
+ * description here!
+ * </p>
  *
- * @author cbaciliod
+ * @author bxcode
  * @author dbacilio88@outllok.es
- * @since 25/09/2024
+ * @since 28/10/2024
  */
 
 @Data
