@@ -1,22 +1,24 @@
 # 🎯 archetype-api-microservices
 
 <!-- TOC -->
+
 * [🎯 archetype-api-microservices](#-archetype-api-microservices)
 * [🧩 Descripción general](#-descripción-general)
 * [🔖 Características](#-características)
-  * [📋 Requisitos](#-requisitos)
+    * [📋 Requisitos](#-requisitos)
 * [🪛 Crear un proyecto](#-crear-un-proyecto)
-  * [📀 Instalación](#-instalación)
-  * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
-  * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
-  * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
-  * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
-  * [⚙️ Configuración rápida](#-configuración-rápida)
-  * [🧰 Integración de dependencias](#-integración-de-dependencias)
-  * [📦 Ejemplo de código](#-ejemplo-de-código)
+    * [📀 Instalación](#-instalación)
+    * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
+    * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
+    * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
+    * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
+    * [⚙️ Configuración rápida](#-configuración-rápida)
+    * [🧰 Integración de dependencias](#-integración-de-dependencias)
+    * [📦 Ejemplo de código](#-ejemplo-de-código)
 * [🧪 Uso](#-uso)
 * [👨🏻‍💻 Contribuciones](#-contribuciones)
 * [📞 Contacto](#-contacto)
+
 <!-- TOC -->
 
 # 🧩 Descripción general
@@ -30,8 +32,15 @@ diseñado para facilitar el desarrollo rápido y eficiente de aplicaciones web.
 
 Asegúrate de tener instalado:
 
-- Java 11 + (o la versión necesaria)
+- Java OpenJDK 11
 - Maven 3.6 o superior
+- Git
+
+| Herramienta  | Version | Recurso                                                                                                                           |
+|--------------|:-------:|-----------------------------------------------------------------------------------------------------------------------------------|
+| Java OpenJDK |   11    | [resources](https://jdk.java.net/java-se-ri/11-MR3)                                                                               |
+| Maven        |  3.6.2  | [resources](https://archive.apache.org/dist/maven/maven-3/3.6.2/)                                                                 |
+| Git          | latest  | [win](https://git-scm.com/downloads/win),  [mac](https://git-scm.com/downloads/mac), [linux](https://git-scm.com/downloads/linux) |
 
 # 🪛 Crear un proyecto
 
