@@ -25,12 +25,15 @@
 - Implementación de CRUD para la entidad `Application` ejemplo básico.
 - Implementación de excepciones global para capturar y manejar excepciones personalizadas.
 - Gestion de dependencias con **Maven** y **Gradle**
+---
 
 
-### Cambiado
-- No cambios.
+### Cambiado 2024-11-11
+- Entorno de Desarrollo y Pruebas: Velocidad, Simplicidad, Reseteo Rápido
+- Cambio archivos de configuración: application.yml
+- Cambio de dependencia base de datos H2
 
-### Corregido
-- No correcciones
+### Corregido 2024-11-11
+- Nombre de paquete exceptions
 
 ---

@@ -3,12 +3,10 @@ spring:
   jpa:
     open-in-view: false
     show-sql: false
-    #database: postgresql # Postgres SQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting, and it will be selected by default)
     hibernate:
-      ddl-auto: none
+      ddl-auto: create # Creates the database schema from scratch every time the application starts. This means all existing tables are dropped and recreated, which is useful in development environments where data is not critical.
     properties:
       hibernate:
-        #dialect: org.hibernate.dialect.PostgreSQLDialect # Postgres SQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting, and it will be selected by default)
         show_sql: true
         format_sql: true
 
@@ -26,7 +24,13 @@ spring:
       maximum-pool-size: 20               # This property controls the maximum size that the pool is allowed to reach, including both idle and in-use connections. Basically this value will determine the maximum number of actual connections to the database backend, default: 10
       validation-timeout: 5000            # This property controls the maximum amount of time that a connection will be tested for aliveness. This value must be less than the :connection-timeout. The lowest accepted validation timeout is 1000ms (1 second)
 
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=public
-    username: postgres
-    password: postgres
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+      settings:
+        trace: true
