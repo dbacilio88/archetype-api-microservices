@@ -1,6 +1,6 @@
 package ${package}.${packageName.replace('/','.')}.components.exceptions.handler;
 
-import com.example.microservice.application.components.exceptions.CommonException;
+import ${package}.${packageName.replace('/','.')}.components.exceptions.CommonException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

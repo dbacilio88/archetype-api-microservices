@@ -71,7 +71,7 @@ dependencies {
 
     // dependencies app build
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '3.3.0'
-    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '3.3.0'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.3.0'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '3.3.0'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '3.3.0'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '3.3.0'
@@ -82,11 +82,11 @@ dependencies {
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.23.1'
 
     // dependencies app database
-    implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.2'
+    implementation group: 'com.h2database', name: 'h2', version: '2.2.224'
 
     // dependencies app documentation swagger
-    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webflux-ui', version: '2.6.0'
-    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webflux-api', version: '2.6.0'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.6.0'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-api', version: '2.6.0'
 
     //compiled annotation processor
     annotationProcessor group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '3.3.0'

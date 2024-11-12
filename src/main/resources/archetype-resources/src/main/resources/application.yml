@@ -11,12 +11,12 @@ server:
     idle-timeout: 5000
     connection-timeout: 6000
   servlet:
-    context-path: /archetype-example/v1
+    context-path: /api/v1
 
 # app spring configuration:
 spring:
   application:
-    name: archetype-example
+    name: ${artifactId}
   banner:
     location: 'classpath:/banner.txt'
   main:
