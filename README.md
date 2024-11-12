@@ -1,28 +1,30 @@
 # 🎯 archetype-api-microservices
 
 <!-- TOC -->
+
 * [🎯 archetype-api-microservices](#-archetype-api-microservices)
 * [🧩 Descripción general](#-descripción-general)
 * [🔖 Características](#-características)
-  * [📋 Requisitos](#-requisitos)
+    * [📋 Requisitos](#-requisitos)
 * [🪛 Crear un proyecto](#-crear-un-proyecto)
-  * [📀 Instalación](#-instalación)
-  * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
-  * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
-  * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
-  * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
-  * [⚙️ Configuración rápida](#-configuración-rápida)
-  * [🧰 Integración de dependencias](#-integración-de-dependencias)
-  * [📦 Ejemplo de código](#-ejemplo-de-código)
+    * [📀 Instalación](#-instalación)
+    * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
+    * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
+    * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
+    * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
+    * [⚙️ Configuración rápida](#-configuración-rápida)
+    * [🧰 Integración de dependencias](#-integración-de-dependencias)
+    * [📦 Ejemplo de código](#-ejemplo-de-código)
 * [🧪 Uso](#-uso)
 * [👨🏻‍💻 Contribuciones](#-contribuciones)
 * [📞 Contacto](#-contacto)
+
 <!-- TOC -->
 
 # 🧩 Descripción general
 
 Este arquetipo proporciona una estructura básica para iniciar proyectos en Java utilizando el framework Spring. Está
-diseñado para facilitar el desarrollo rápido y eficiente de aplicaciones web.
+diseñado para facilitar el desarrollo rápido y eficiente de aplicaciones rest.
 
 # 🔖 Características
 
@@ -30,8 +32,15 @@ diseñado para facilitar el desarrollo rápido y eficiente de aplicaciones web.
 
 Asegúrate de tener instalado:
 
-- Java 11 + (o la versión necesaria)
+- Java OpenJDK 21
 - Maven 3.6 o superior
+- Git
+
+| Herramienta  | Version | Recurso                                                                                                                           |
+|--------------|:-------:|-----------------------------------------------------------------------------------------------------------------------------------|
+| Java OpenJDK |   21    | [resources](https://jdk.java.net/java-se-ri/21)                                                                                   |
+| Maven        |  3.6.2  | [resources](https://archive.apache.org/dist/maven/maven-3/3.6.2/)                                                                 |
+| Git          | latest  | [win](https://git-scm.com/downloads/win),  [mac](https://git-scm.com/downloads/mac), [linux](https://git-scm.com/downloads/linux) |
 
 # 🪛 Crear un proyecto
 
@@ -59,12 +68,12 @@ mvn clean install
 mvn archetype:generate \
 -DarchetypeGroupId=com.bacsystem \
 -DarchetypeArtifactId=archetype-api-microservices \
--DarchetypeVersion=1.0.0 \
+-DarchetypeVersion=1.1.0 \
 -DgroupId=com.example \
 -DartifactId=archetype-example \
 -Dversion=1.0.0 \
 -Dversion=1.0.0 \
--DpackageName=microservice/application \
+-DpackageName=microservice \
 -Dpackage=com.example \
 -DinteractiveMode=false
 ```
@@ -75,11 +84,11 @@ mvn archetype:generate \
 mvn archetype:generate ^
 -DarchetypeGroupId=com.bacsystem ^
 -DarchetypeArtifactId=archetype-api-microservices ^
--DarchetypeVersion=1.0.0 ^
+-DarchetypeVersion=1.1.0 ^
 -DgroupId=com.example ^
 -DartifactId=archetype-example ^
 -Dversion=1.0.0 ^
--DpackageName=microservice/application ^
+-DpackageName=microservice ^
 -Dpackage=com.example ^
 -DinteractiveMode=false
 ```
@@ -127,9 +136,9 @@ Disk:
 
 ## 🔧 Tecnologías Usadas
 
-|  java  | Spring Boot |   Gradle   | Maven          | Branch      |
-|:------:|:-----------:|:----------:|----------------|-------------|
-| jdk-11 |     2.*     | gradle-8.5 | 3.6 o superior | [console]() |
+|    java    | Spring Boot |   Gradle   | Maven          | Branch                                                                                         |
+|:----------:|:-----------:|:----------:|----------------|------------------------------------------------------------------------------------------------|
+| openJDK-21 |     3.*     | gradle-8.5 | 3.6 o superior | [console](https://github.com/dbacilio88/archetype-api-microservices/tree/spring-boot-3-jdk-21) |
 
 ## ⚙️ Configuración rápida
 
@@ -137,7 +146,7 @@ Incluye configuraciones predeterminadas para Spring Boot.
 
 ## 🧰 Integración de dependencias
 
-Configuración básica de Maven para gestionar dependencias.
+Configuración básica de Maven o Gradle para gestionar dependencias.
 
 ## 📦 Ejemplo de código
 
@@ -149,6 +158,8 @@ Incluye ejemplos de controladores, servicios y repositorios.
 
 Puedes agregar tus propios controladores, servicios y repositorios en las carpetas correspondientes. Modifica
 `application.properties` o  `application.yml` para configurar tu aplicación según sea necesario.
+
+Nota: ejecutar el componente o aplicación en perfil **`dev`**
 
 # 👨🏻‍💻 Contribuciones
 
