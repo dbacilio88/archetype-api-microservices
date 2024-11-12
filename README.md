@@ -68,7 +68,7 @@ mvn clean install
 mvn archetype:generate \
 -DarchetypeGroupId=com.bacsystem \
 -DarchetypeArtifactId=archetype-api-microservices \
--DarchetypeVersion=1.0.0 \
+-DarchetypeVersion=1.1.0 \
 -DgroupId=com.example \
 -DartifactId=archetype-example \
 -Dversion=1.0.0 \
@@ -84,7 +84,7 @@ mvn archetype:generate \
 mvn archetype:generate ^
 -DarchetypeGroupId=com.bacsystem ^
 -DarchetypeArtifactId=archetype-api-microservices ^
--DarchetypeVersion=1.0.0 ^
+-DarchetypeVersion=1.1.0 ^
 -DgroupId=com.example ^
 -DartifactId=archetype-example ^
 -Dversion=1.0.0 ^

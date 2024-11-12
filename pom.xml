@@ -1,11 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bacsystem</groupId>
     <artifactId>archetype-api-microservices</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <description>archetype component spring-boot</description>
 
     <developers>
@@ -20,12 +22,24 @@
         </developer>
     </developers>
 
+    <scm>
+        <connection>scm:git:git://github.com/dbacilio88/archetype-api-microservices.git</connection>
+        <developerConnection>scm:git:ssh://github.com/dbacilio88/archetype-api-microservices.git</developerConnection>
+        <url>https://github.com/dbacilio88/archetype-api-microservices</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>he Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
 
 
     <build>
