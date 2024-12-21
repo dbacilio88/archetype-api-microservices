@@ -1,24 +1,31 @@
+![Discord](https://img.shields.io/discord/738601834096099409)
+![GitHub forks](https://img.shields.io/github/forks/dbacilio88/archetype-api-microservices?style=social)
+![GitHub Release](https://img.shields.io/github/v/release/dbacilio88/archetype-api-microservices)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/dbacilio88/archetype-api-microservices)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dbacilio88/archetype-api-microservices/ci.yml)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/dbacilio88/archetype-api-microservices/total)
+![GitHub License](https://img.shields.io/github/license/dbacilio88/archetype-api-microservices)
+
+
 # 🎯 archetype-api-microservices
 
 <!-- TOC -->
-
 * [🎯 archetype-api-microservices](#-archetype-api-microservices)
 * [🧩 Descripción general](#-descripción-general)
 * [🔖 Características](#-características)
-    * [📋 Requisitos](#-requisitos)
+  * [📋 Requisitos](#-requisitos)
 * [🪛 Crear un proyecto](#-crear-un-proyecto)
-    * [📀 Instalación](#-instalación)
-    * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
-    * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
-    * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
-    * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
-    * [⚙️ Configuración rápida](#-configuración-rápida)
-    * [🧰 Integración de dependencias](#-integración-de-dependencias)
-    * [📦 Ejemplo de código](#-ejemplo-de-código)
+  * [📀 Instalación](#-instalación)
+  * [💻 Construir en Terminal bash](#-construir-en-terminal-bash)
+  * [🖥️ Construir en Terminal cmd](#-construir-en-terminal-cmd)
+  * [🧮 Estructura del proyecto](#-estructura-del-proyecto)
+  * [🔧 Tecnologías Usadas](#-tecnologías-usadas)
+  * [⚙️ Configuración rápida](#-configuración-rápida)
+  * [🧰 Integración de dependencias](#-integración-de-dependencias)
+  * [📦 Ejemplo de código](#-ejemplo-de-código)
 * [🧪 Uso](#-uso)
 * [👨🏻‍💻 Contribuciones](#-contribuciones)
-* [📞 Contacto](#-contacto)
-
+* [📞 Contacto](#-contacto-)
 <!-- TOC -->
 
 # 🧩 Descripción general
@@ -174,6 +181,7 @@ request.
 
 Tu apoyo puede hacer una gran diferencia y juntos podemos construir algo increíble. 🚀 ¡Espero contar contigo!
 
-# 📞 Contacto
+# 📞 Contacto 
+![Discord](https://img.shields.io/discord/738601834096099409)
 
 Para más información, puedes contactar a [dbacilio88](https://github.com/dbacilio88)
