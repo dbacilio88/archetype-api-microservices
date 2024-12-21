@@ -1,11 +1,9 @@
-![Discord](https://img.shields.io/discord/738601834096099409)
-![GitHub forks](https://img.shields.io/github/forks/dbacilio88/archetype-api-microservices?style=social)
-![GitHub Release](https://img.shields.io/github/v/release/dbacilio88/archetype-api-microservices)
-![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/dbacilio88/archetype-api-microservices)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dbacilio88/archetype-api-microservices/ci.yml)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/dbacilio88/archetype-api-microservices/total)
-![GitHub License](https://img.shields.io/github/license/dbacilio88/archetype-api-microservices)
-![Discord](https://img.shields.io/discord/738601834096099409?link=https%3A%2F%2Fdiscord.gg%2FcwpS3acj)
+[![Discord](https://img.shields.io/discord/738601834096099409)](https://discord.gg/cwpS3acj)
+[![GitHub forks](https://img.shields.io/github/forks/dbacilio88/archetype-api-microservices?style=social)](https://github.com/dbacilio88/archetype-api-microservices/forks)
+[![GitHub Release](https://img.shields.io/github/v/release/dbacilio88/archetype-api-microservices)](https://github.com/dbacilio88/archetype-api-microservices/releases)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dbacilio88/archetype-api-microservices/ci.yml)](https://github.com/dbacilio88/archetype-api-microservices/actions)
+[![GitHub contributors](https://img.shields.io/github/contributors/dbacilio88/archetype-api-microservices)](https://github.com/dbacilio88/archetype-api-microservices/graphs/contributors)
+[![GitHub License](https://img.shields.io/github/license/dbacilio88/archetype-api-microservices)](https://github.com/dbacilio88/archetype-api-microservices/blob/master/LICENSE)
 
 
 # 🎯 archetype-api-microservices
