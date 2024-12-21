@@ -182,6 +182,5 @@ request.
 Tu apoyo puede hacer una gran diferencia y juntos podemos construir algo increíble. 🚀 ¡Espero contar contigo!
 
 # 📞 Contacto 
-![Discord](https://img.shields.io/discord/738601834096099409)
 
 Para más información, puedes contactar a [dbacilio88](https://github.com/dbacilio88)
