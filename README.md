@@ -5,6 +5,7 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dbacilio88/archetype-api-microservices/ci.yml)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/dbacilio88/archetype-api-microservices/total)
 ![GitHub License](https://img.shields.io/github/license/dbacilio88/archetype-api-microservices)
+![Discord](https://img.shields.io/discord/738601834096099409?link=https%3A%2F%2Fdiscord.gg%2FcwpS3acj)
 
 
 # 🎯 archetype-api-microservices
